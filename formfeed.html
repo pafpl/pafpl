@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Volunteer Personal Information</title>
+    <style>
+        body {
+            font-family: Times, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* Center align everything */
+            border: 10px solid black;
+            /* Add 10px black border */
+            padding: 10px;
+            /* Add 10px padding */
+            box-sizing: border-box;
+            /* Include border and padding in element's total width and height */
+        }
+
+        .container {
+            width: 60.666%;
+            /* 2/3 of the screen width */
+            margin: 0 auto;
+            /* Center the container */
+            text-align: left;
+            /* Reset text alignment for form elements */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        input[type="checkbox"],
+        textarea {
+            margin-bottom: 10px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            width: calc(50% - 10px);
+            /* Half width for most inputs, subtract 10px for padding */
+        }
+
+        .checkbox-group>div {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #2473C2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        mark {
+            background-color: red;
+            /* Highlighted parts in red */
+        }
+
+        .aligned-checkboxes div,
+        .aligned-checkboxes label {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .aligned-fields label,
+        .aligned-fields input {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        img.logo {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_11204924/Image/News/2023/02_February/Untitled%20design%20(15)%20(1).png" alt="city seal" class="logo">
+        <h1>Participant Waiver of Liability</h1>
+        <p>
+            <h3><mark>PLEASE READ CAREFULLY</mark></h3>
+            I understand that my participation in the Perth Amboy Free Public Library Volunteer Program, which is a voluntary activity, is that of my own free choice. I agree to <b>RELEASE AND HOLD HARMLESS the CITY OF PERTH AMBOY, the PERTH AMBOY FREE PUBLIC LIBRARY</b>,
+            their officials, employees, representatives, volunteers, and agents for any and all rights and claims for damages, including attorney fees, I now, or may hereafter have, whether known or unknown in law or in equity, and arising from or in
+            any way connected with my participation in this <b>LIBRARY VOLUNTEER PROGRAM</b>. I agree that the terms stated herein shall also serve as a <b>WAIVER OF LIABILITY</b> or, assignees, and for all members of my family.<br><br> I also consent
+            that the <b>PERTH AMBOY FREE PUBLIC LIBRARY</b> and the <b>CITY OF PERTH AMBOY</b> may use the name, image, voice and/or likeness of me in any photographs, newsletters, television programs, websites or other media promoting or advertising
+            of the <b>CITY OF PERTH AMBOY</b> and the <b>PERTH AMBOY FREE PUBLIC LIBRARY</b>.
+        </p>
+        <label for="liability_consent">Please check one:</label>
+        <div class="aligned-checkboxes">
+            <div>
+                <input type="radio" id="liability_yes" name="liability_consent" value="Yes">
+                <label for="liability_yes">YES</label>
+            </div>
+            <div>
+                <input type="radio" id="liability_no" name="liability_consent" value="No">
+                <label for="liability_no">NO</label>
+            </div>
+        </div>
+        <p>
+            I acknowledge that I have carefully read this <b>WAIVER OF LIABILITY</b> and fully understand that I am waiving any right that I may now or hereafter have to bring a legal action to assert any claim against the <b>PERTH AMBOY FREE PUBLIC LIBRARY</b>            in connection with my participation in the aforementioned activity.
+        </p>
+        <hr>
+
+        <h2>Library Volunteer Information</h2>
+        <form action="https://script.google.com/macros/s/AKfycbxOK2pvWOWH877ORzI0T5k1Yz7tlakvVFJTdr6WLL3uM_VhERFdmgdYptZ75BdinZt8/exec" method="post">
+
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address"><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state">
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip"><br>
+
+            <label for="emergency_contact">Emergency Contact:</label>
+            <input type="text" id="emergency_contact" name="emergency_contact">
+            <label for="relationship_to_emergency_contact">Relationship to Emergency Contact:</label>
+            <input type="text" id="relationship_to_emergency_contact" name="relationship_to_emergency_contact">
+            <label for="emergency_contact_phone">Emergency Contact Phone:</label>
+            <input type="text" id="emergency_contact_phone" name="emergency_contact_phone"><br>
+
+            <div class="aligned-checkboxes">
+                <input type="checkbox" id="under_18" name="under_18" value="Yes">
+                <label for="under_18">Are you under 18 years of age?</label>
+
+                <input type="checkbox" id="previous_library_experience" name="previous_library_experience" value="Yes">
+                <label for="previous_library_experience">Have you ever worked or volunteered in a library setting before?</label>
+            </div>
+
+            <label for="previous_library_location">If yes, where?</label>
+            <input type="text" id="previous_library_location" name="previous_library_location">
+
+            <hr>
+
+            <h2>Availability</h2>
+            <div class="checkbox-group">
+                <div>
+                    <input type="checkbox" id="availability_weekdays" name="availability[]" value="Weekdays">
+                    <label for="availability_weekdays">Weekdays</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="availability_weekends" name="availability[]" value="Weekends">
+                    <label for="availability_weekends">Weekends</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="availability_mornings" name="availability[]" value="Mornings">
+                    <label for="availability_mornings">Mornings</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="availability_evenings" name="availability[]" value="Evenings">
+                    <label for="availability_evenings">Afternoons</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="availability_nights" name="availability[]" value="Nights">
+                    <label for="availability_nights">Evenings</label>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>Interests</h2>
+            <div class="checkbox-group">
+                <div>
+                    <input type="checkbox" id="interest_computer_proficiency" name="interests[]" value="Computer Proficiency">
+                    <label for="interest_computer_proficiency">Computer Proficiency</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="interest_shelving" name="interests[]" value="Shelving/Arranging Books">
+                    <label for="interest_shelving">Shelving/Arranging Books</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="interest_events" name="interests[]" value="Events/Programming">
+                    <label for="interest_events">Events/Programming</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="interest_young_adults" name="interests[]" value="Young Adults/Children">
+                    <label for="interest_young_adults">Young Adults/Children</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="interest_graphic_design" name="interests[]" value="Graphic Design">
+                    <label for="interest_graphic_design">Graphic Design</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="interest_archiving" name="interests[]" value="Archiving">
+                    <label for="interest_archiving">Archiving</label>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>Skills & Qualifications</h2>
+            <label for="skills_qualifications">Please describe any skills or qualifications you have:</label>
+            <textarea id="skills_qualifications" name="skills_qualifications"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
